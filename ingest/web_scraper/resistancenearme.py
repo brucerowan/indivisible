@@ -93,7 +93,7 @@ df.to_csv(_filename,index=False)
 
 
 ####COMBINE CSVS (cant get to work)
-
+'''
 #  find files
 _CSVs = []
 for dirpath, dirnames, fnames in walk('scraped_data'):
@@ -111,7 +111,7 @@ for f in _CSVs:
 
 logging.debug('Combining into single DataFrame...')
 events_df = (df_list[0].append(df_list[1:],ignore_index=True).reset_index(drop=True))
-
+'''
 
 # End session safely
 browser.quit()
